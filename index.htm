@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Super Bird Creations - Manufacturing Bird Toys since 1992</title>
+  <meta name="description"
+    content="Super Bird Creations creates safe, fun and stimulating bird toys, original products for instinctual and behavioral needs for companion birds." />
+  <meta name="keywords"
+    content="super bird toys, wholesale bird toys, bird toy manufacturer, natural bird toys, parrot toys, large bird toys, small bird toys" />
+  <meta name="google-site-verification" content="C_jGts7m82zZLvf2ecYDo-H7kkeMnqLcZ-nQP_eylFs" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="SHORTCUT ICON" href="http://www.superbirdtoys.com/favicon.ico" />
+  <link rel="icon" type="image/gif" href="/favicon.gif" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-55004319-8', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script>
+    var cont = 0;
+    function loopSlider() {
+      var xx = setInterval(function () {
+        switch (cont) {
+          case 0: {
+            $("#slider-1").fadeOut(400);
+            $("#slider-2").delay(400).fadeIn(400);
+            $("#sButton1").removeClass("bg-purple-800");
+            $("#sButton2").addClass("bg-purple-800");
+            cont = 1;
+            break;
+          }
+          case 1:
+            {
+              $("#slider-2").fadeOut(400);
+              $("#slider-1").delay(400).fadeIn(400);
+              $("#sButton2").removeClass("bg-purple-800");
+              $("#sButton1").addClass("bg-purple-800");
+              cont = 0;
+              break;
+            }
+        }
+      }, 8000);
+    }
+    function reinitLoop(time) {
+      clearInterval(xx);
+      setTimeout(loopSlider(), time);
+    }
+    function sliderButton1() {
+      $("#slider-2").fadeOut(400);
+      $("#slider-1").delay(400).fadeIn(400);
+      $("#sButton2").removeClass("bg-purple-800");
+      $("#sButton1").addClass("bg-purple-800");
+      reinitLoop(4000);
+      cont = 0
+    }
+    function sliderButton2() {
+      $("#slider-1").fadeOut(400);
+      $("#slider-2").delay(400).fadeIn(400);
+      $("#sButton1").removeClass("bg-purple-800");
+      $("#sButton2").addClass("bg-purple-800");
+      reinitLoop(4000);
+      cont = 1
+    }
+    $(window).ready(function () {
+      $("#slider-2").hide();
+      $("#sButton1").addClass("bg-purple-800");
+      loopSlider();
+    });
+  </script>
+  <style>
+    /* body::-webkit-scrollbar { display: none; } */
+#slide-window
+  {
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  top:0px;
+  left:0px;
+  }
+#slides
+  {
+  height:100%;  
+  position:absolute;
+  margin:0px;
+  padding:0px;
+  -webkit-transform: translate3d(0px,0px,0px);
+  transform: translate3d(0px,0px,0px);
+  transition: all 0.66s ease; -webkit-transition: all 0.66s ease; 
+  }
+.slide 
+  {
+  list-style:none;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 100%;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px; 
+  background-size: cover; 
+  background-position:50% 50%;
+  color:#fff;
+  -webkit-transform: translate3d(0px,0px,0px);
+  visibility:hidden;
+  -webkit-transform-style: preserve-3d;
+  }
+.alive { visibility:visible; }
+.nav 
+  { 
+  position:absolute; 
+  z-index:9; 
+  top:50%; 
+  cursor:pointer; 
+  color:#fff; 
+  opacity:0.7; 
+  transition: all 0.66s ease; -webkit-transition: all 0.66s ease; 
+  }
+.nav:hover { opacity:1.0; }
+#left { left:3%; }
+#right { right:3%; }
+#credit 
+  { 
+  position:absolute; 
+  top:25px; 
+  left:25px; 
+  color:#eaeaea; 
+  font-family: 'Courier New', Courier, monospace;  
+  }
+  </style>
+</head>
+<body>
+  <header class="p-2 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <a class="block box-border h-16 w-16 md:h-20 md:w-20 overflow-hidden rounded-full transform hover:scale-110"
+        href="">
+        <img class="h-full w-full object-cover"
+          src="/images/SBC logo.jpg"
+          alt="Logo of my example, this is a heart image">
+      </a>
+      <div>
+        <button id="toggle-menu-button" class="z-50 md:hidden relative">
+          <span class="sr-only">Toggle Menu</span>
+          <div id="open" class="h-7 flex flex-col items-end justify-between">
+            <span class="block h-0.5 w-8 bg-red-900 rounded-full"></span>
+            <span class="block h-0.5 w-6 bg-red-900 rounded-full"></span>
+            <span class="block h-0.5 w-8 bg-red-900 rounded-full"></span>
+          </div>
+          <div id="close" class="hidden h-7 flex flex-col items-end justify-between">
+            <span
+              class="block h-0.5 w-8 bg-red-100 rounded-full origin-left transform rotate-45 translate-y-0.5"></span>
+            <span
+              class="block h-0.5 w-8 bg-red-100 rounded-full origin-left transform -rotate-45 -translate-y-0.5"></span>
+          </div>
+        </button>
+        <div id="toggle-menu"
+          class="hidden md:block font-bold text-red-100 text-right text-2xl bg-gray-800 fixed top-0 left-0 h-screen w-screen flex flex-col items-center justify-center md:text-lg md:relative md:text-red-900 md:bg-transparent md:w-auto md:h-auto md:text-left">
+          <ul class="flex flex-col gap-y-7 md:flex-row md:gap-2">
+            <li class="md:border-r md:px-4 md:border-red-200">
+              <a href="/company/about_super_bird.htm"
+                class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">About</a>
+            </li>
+            <li class="md:border-r md:px-4 md:border-red-200">
+              <a href="/products/newbirdtoys.htm" class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">New
+                Products</a>
+            </li>
+            <li class="md:border-r md:px-4 md:border-red-200">
+              <a href="/catalog/catalog.htm" class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Download
+                Catalog</a>
+            </li>
+            <li class="md:border-r md:px-4 md:border-red-200">
+              <a href="/outlets/outlets.htm" class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Buy
+                Online</a>
+            </li>
+            <li class="md:border-r md:px-4 md:border-red-200">
+              <a href="/contact/" class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- <section id="hero">
+    <div class="sliderAx h-auto">
+      <div id="slider-1" class="container-fluid mx-auto">
+        <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
+          style="background-image: url(https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80)">
+          <div class="md:w-1/2">
+            <p class="font-bold text-sm uppercase">Services</p>
+            <p class="text-3xl font-bold">Hello world</p>
+            <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+            <a href="#"
+              class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
+              us</a>
+          </div>
+        </div> 
+        <br>
+      </div>
+      <div id="slider-2" class="container-fluid mx-auto">
+        <div class="bg-cover bg-top  h-auto text-white py-24 px-10 object-fill"
+          style="background-image: url(https://images.unsplash.com/photo-1544144433-d50aff500b91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+          <p class="font-bold text-sm uppercase">Services</p>
+          <p class="text-3xl font-bold">Hello world</p>
+          <p class="text-2xl mb-10 leading-none">Carousel with TailwindCSS and jQuery</p>
+          <a href="#"
+            class="bg-purple-800 py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
+            us</a>
+        <br>
+      </div>
+    </div>
+    <div class="flex justify-between w-12 mx-auto pb-2">
+      <button id="sButton1" onclick="sliderButton1()" class="bg-purple-400 rounded-full w-4 pb-2 "></button>
+      <button id="sButton2" onclick="sliderButton2() " class="bg-purple-400 rounded-full w-4 p-2"></button>
+    </div>
+  </section> -->
+  <!-- Section Slider testing -->
+  <section class="relative h-[500px]">
+    <div id="slide-window" class="relative h-full overflow-hidden">
+      <ol id="slides" start="1" class="w-full h-full flex transition-transform relative">
+        <li class="slide color-0 w-full h-full flex items-center justify-center bg-cover relative" style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-JSxf5Nm/0/X3/Burning-Man-Day-6%20%28202%20of%201606%29-X3.jpg);">
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div class="text-center relative z-10 text-white text-4xl">
+            <h1 class="text-4xl font-bold">Welcome to Our Toy Store</h1>
+            <p class="text-lg mt-4">Discover a world of fun and interactive bird toys.</p>
+          </div>
+        </li>
+        <li class="slide color-1 w-full h-full flex items-center justify-center bg-cover relative" style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-KMjVHRd/0/X3/Andramada-X3.jpg);">
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div class="text-center relative z-10 text-white text-4xl">
+            <h1 class="text-4xl font-bold">Subscribe to Our Newsletter</h1>
+            <p class="text-lg mt-4">Stay up-to-date with the latest bird toy offers and news.</p>
+            <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full text-sm">Subscribe Now</button>
+          </div>
+        </li>
+        <li class="slide color-2 w-full h-full flex items-center justify-center bg-cover relative" style="background-image:url(http://stuckincustoms.smugmug.com/Burning-Man/i-dd9xmfn/0/X3/The%20Steamy%20Car-X3.jpg);">
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div class="text-center relative z-10 text-white text-4xl">
+            <h1 class="text-4xl font-bold">Explore Our Toy Collection</h1>
+            <p class="text-lg mt-4">Browse our wide range of bird toys for your feathered friends.</p>
+          </div>
+        </li>
+        <li class="slide color-3 w-full h-full flex items-center justify-center bg-cover relative" style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-KscS8CF/0/X3/Burning-Man-Day-1%20%281006%20of%201210%29-X3.jpg);">
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <div class="text-center relative z-10 text-white text-4xl">
+            <h1 class="text-4xl font-bold">Contact Us</h1>
+            <p class="text-lg mt-4">Have questions or feedback? We're here to help.</p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 mt-4 rounded-full text-sm">Contact</button>
+          </div>
+        </li>  
+      </ol>
+      <!-- <span class="nav fa fa-chevron-left fa-3x" id="left">left</span>
+      <span class="nav fa fa-chevron-right fa-3x" id="right">right</span>
+   -->
+      <!-- Left Arrow SVG Icon -->
+      <span id="left" class="nav absolute top-1/2 left-4 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </span>
+      <!-- Right Arrow SVG Icon -->
+      <span id="right" class="nav absolute top-1/2 right-4 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </span>
+    </div>
+  </section>
+  <section id="intro" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Super Bird Creations</h2>
+      <div class="md:flex">
+        <div class="md:w-1/2 px-10">
+          <p class="mb-4">Super Bird Creations bird toys are recognized by bird enthusiasts as some of the safest
+            available on the market. Since 1992, we have been intently focused on designing hundreds of original toys
+            and products to address the instinctual and behavioral needs of companion birds.</p>
+          <p class="mb-4">Super Bird Creations is clearly the avian expert's choice for bird toys. Our toy designs
+            utilize a diverse selection of stimulating materials and encompass all of the critical destructible,
+            interactive, comfort, exercise, and foraging toy categories necessary to ensure the mental and physical
+            well-being of pet birds.</p>
+        </div>
+        <div class="md:w-1/2 px-10">
+          <p class="mb-4">Our <a href="/products/" title="product line">product line</a> consists of a variety of
+            innovative products, including: <a href="/products/">bird toys</a>, <a
+              href="/products/swingsbungees.htm">swings</a>, <a href="/products/swingsbungees.htm">bungees</a>, <a
+              href="/products/perchesandmore.htm">shower perches</a>, <a href="/products/snugglies.htm">snugglies</a>,
+            <a href="/products/foragingbirdtoys.htm">foraging toys</a>, and <a
+              href="/products/bulkbirdtoyparts.htm">bulk bird toy parts</a>. Whether you are looking for a toy for a
+            parrotlet or a macaw, we have you covered.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="mission" class="bg-gray-100 pt-8 pb-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-semibold text-center mb-8">Our Mission</h2>
+      <p class="text-center">Our company mission is <em class="italic text-red-500">"To have a positive influence on the lives of
+          companion birds and their owners through the design and manufacture of our products."</em> In keeping with
+        that mission, we are pleased to provide you with some important information on the care of companion birds as it
+        relates to toys in the following articles:</p>
+    </div>
+  </section>
+  <section id="our-articles" class="py-12">
+    <h2 class="text-3xl font-semibold mb-2 text-center text-black">Our Articles</h2>
+    <div class="container mx-auto flex flex-wrap justify-center">
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl h-full">
+          <img src="/images/VetApproved.jpg" alt="Choosing Bird Toy Graph"
+            class="rounded-t-lg md:rounded-l-lg md:rounded-t-none w-100 h-[250px] m-auto" />
+          <div class="pt-6">
+            <h2 class="text-xl font-semibold mb-6">Selecting a Safe Toy for Your Bird</h2>
+            <p class="text-gray-600 text-sm">As with kids, no toy is 100% safe for all birds. A parrot relies on its
+              owner to make sure its playtime activities are safe. Selecting the right toy is one way you can keep your
+              bird healthy and injury free...</p>
+              <a href="/articles/safety.htm" class="text-blue-500 hover:underline block mt-6">Read More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl h-full">
+          <img src="/images/justabirdtoy.gif" alt="Choosing Bird Toy Graph"
+            class="rounded-t-lg md:rounded-l-lg md:rounded-t-none w-100 h-[250px] m-auto" />
+          <div class="pt-6">
+            <h2 class="text-xl font-semibold mb-6">Is it Really Just a Bird Toy?</h2>
+            <p class="text-gray-600 text-sm">...or is it a magical device that becomes whatever your bird desires? One
+              thing is very clear, bird toys are more than mere playthings when it comes to your bird. What does a bird
+              toy represent to your bird? How can this help you to make better choices for your bird?...</p>
+            <a href="/articles/choosing_a_toy.htm" class="text-blue-500 hover:underline block mt-6">Read More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl h-100">
+          <img src="/images/SCC_logo.jpg" alt="Laptop on Desk"
+            class="rounded-t-lg md:rounded-l-lg md:rounded-t-none w-100 h-[250px] m-auto" />
+          <div class="pt-6">
+          <h2 class="text-xl font-semibold mb-6">Why Bird Toys are Important?</h2>
+          <p class="text-gray-600 text-sm">As a pet in captivity, birds don’t have the opportunity to engage in the
+            activities that they naturally would in the wild. Avian behaviorists who have spent time observing parrots
+            in the wild have reported that playtime ranks second only to food gathering in priority...</p>
+          <a href="articles/importance.htm" class="text-blue-500 hover:underline mt-6 block">Read more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto flex flex-wrap justify-center">
+      <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
+        <h3 class="text-2xl font-semibold mb-4">Product Categories</h3>
+        <ul class="list-none text-center">
+          <li><a href="/products/smallbirdtoys.htm" class="hover:text-blue-500">Small Bird Toys</a></li>
+          <li><a href="/products/mediumbirdtoys.htm" class="hover:text-blue-500">Medium Bird Toys</a></li>
+          <li><a href="/products/largebirdtoys.htm" class="hover:text-blue-500">Large Bird Toys</a></li>
+          <li><a href="/products/xlbirdtoys.htm" class="hover:text-blue-500">XL Bird Toys</a></li>
+          <li><a href="/products/newbirdtoys.htm" class="hover:text-red-500">New Bird Toys</a></li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
+        <h3 class="text-2xl font-semibold mb-4">Toy Types</h3>
+        <ul class="list-none text-center">
+          <li><a href="/products/foottoys.htm" class="hover:text-blue-500">Foot Toys</a></li>
+          <li><a href="/products/swingsbungees.htm" class="hover:text-blue-500">Swings &amp; Bungees</a></li>
+          <li><a href="/products/foragingbirdtoys.htm" class="hover:text-blue-500">Foraging Toys</a></li>
+          <li><a href="/products/snugglies.htm" class="hover:text-blue-500">Snugglies</a></li>
+          <li><a href="/products/perkyparrottoys.htm" class="hover:text-blue-500">Perky Parrot Toys</a></li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
+        <h3 class="text-2xl font-semibold mb-4">More Products</h3>
+        <ul class="list-none text-center">
+          <li><a href="/products/perchesandmore.htm" class="hover:text-blue-500">Perches &amp; Perch Toys</a></li>
+          <li><a href="/products/bulkbirdtoyparts.htm" class="hover:text-blue-500">Bulk Bird Toy Parts</a></li>
+          <li><a href="/products/seasonalbirdtoys.htm" class="hover:text-blue-500">Seasonal Bird Toys</a></li>
+          <li><a href="/products/smallanimal.htm" class="hover:text-blue-500">Small Animal Toys</a></li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
+        <h3 class="text-2xl font-semibold mb-4">About Us</h3>
+        <ul class="list-none text-center">
+          <li><a href="/company/about_super_bird.htm" class="hover:text-blue-500">About Super Bird Creations</a></li>
+          <li><a href="/contact/" class="hover:text-blue-500">Contact Us</a></li>
+          <li><a href="/resources/resources.htm" class="hover:text-blue-500">Media Resources</a></li>
+          <li><a href="/links/links.htm" class="hover:text-blue-500">Helpful Links</a></li>
+          <li><a href="/catalog/catalog.htm" class="hover:text-blue-500">Download Catalog</a></li>
+          <li><a href="/surveys/" class="hover:text-blue-500">Super Bird Survey</a></li>
+          <li><a href="/sitemap/sitemap.htm" class="hover:text-blue-500">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-8">
+      <p class="text-gray-500">Copyright &copy; 2023 Super Bird Creations. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript">
+  var button = document.querySelector('#toggle-menu-button');
+  var menu = document.querySelector('#toggle-menu');
+  var open = document.querySelector('#open');
+  var close = document.querySelector('#close');
+  button.addEventListener('click', (e) => {
+    menu.classList.toggle('hidden');
+    open.classList.toggle('hidden');
+    close.classList.toggle('hidden');
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const global = {
+    item: 1,
+    total: 0,
+  };
+  const WindowWidth = window.innerWidth;
+  const SlideCount = document.querySelectorAll('#slides li').length;
+  const SlidesWidth = SlideCount * WindowWidth;
+  global.item = 0;
+  global.total = SlideCount;
+  const slideElements = document.querySelectorAll('.slide');
+  const slides = document.getElementById('slides');
+  slideElements.forEach(slide => {
+    slide.style.width = WindowWidth + 'px';
+  });
+  slides.style.width = SlidesWidth + 'px';
+  document.querySelector('#slides li:nth-child(1)').classList.add('alive');
+  document.querySelector('#left').addEventListener('click', () => Slide('back'));
+  document.querySelector('#right').addEventListener('click', () => Slide('forward'));
+  function Slide(direction) {
+    let target;
+    if (direction === 'back') {
+      target = global.item - 1;
+    }
+    if (direction === 'forward') {
+      target = global.item + 1;
+    }
+    if (target === -1) {
+      DoIt(global.total - 1);
+    } else if (target === global.total) {
+      DoIt(0);
+    } else {
+      DoIt(target);
+    }
+  }
+  function DoIt(target) {
+    const windowWidth = window.innerWidth;
+    const margin = windowWidth * target;
+    const actualTarget = target + 1;
+    document.querySelector('#slides li:nth-child(' + actualTarget + ')').classList.add('alive');
+    slides.style.transform = 'translate3d(-' + margin + 'px,0px,0px)';
+    global.item = target;
+    document.querySelector('#count').textContent = global.item + 1;
+  }
+});
+</script>
+</html>
