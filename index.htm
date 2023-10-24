@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Super Bird Creations - Manufacturing Bird Toys since 1992</title>
@@ -80,75 +81,88 @@
   </script>
   <style>
     /* body::-webkit-scrollbar { display: none; } */
-#slide-window
-  {
-  position:absolute;
-  width:100%;
-  height:100%;
-  overflow:hidden;
-  top:0px;
-  left:0px;
-  }
-#slides
-  {
-  height:100%;  
-  position:absolute;
-  margin:0px;
-  padding:0px;
-  -webkit-transform: translate3d(0px,0px,0px);
-  transform: translate3d(0px,0px,0px);
-  transition: all 0.66s ease; -webkit-transition: all 0.66s ease; 
-  }
-.slide 
-  {
-  list-style:none;
-  position: relative;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 500px;
-  height: 100%;
-  background: #ccc;
-  text-align: center;
-  line-height: 300px; 
-  background-size: cover; 
-  background-position:50% 50%;
-  color:#fff;
-  -webkit-transform: translate3d(0px,0px,0px);
-  visibility:hidden;
-  -webkit-transform-style: preserve-3d;
-  }
-.alive { visibility:visible; }
-.nav 
-  { 
-  position:absolute; 
-  z-index:9; 
-  top:50%; 
-  cursor:pointer; 
-  color:#fff; 
-  opacity:0.7; 
-  transition: all 0.66s ease; -webkit-transition: all 0.66s ease; 
-  }
-.nav:hover { opacity:1.0; }
-#left { left:3%; }
-#right { right:3%; }
-#credit 
-  { 
-  position:absolute; 
-  top:25px; 
-  left:25px; 
-  color:#eaeaea; 
-  font-family: 'Courier New', Courier, monospace;  
-  }
+    #slide-window {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      top: 0px;
+      left: 0px;
+    }
+
+    #slides {
+      height: 100%;
+      position: absolute;
+      margin: 0px;
+      padding: 0px;
+      -webkit-transform: translate3d(0px, 0px, 0px);
+      transform: translate3d(0px, 0px, 0px);
+      transition: all 0.66s ease;
+      -webkit-transition: all 0.66s ease;
+    }
+
+    .slide {
+      list-style: none;
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      height: 100%;
+      background: #ccc;
+      text-align: center;
+      line-height: 300px;
+      background-size: cover;
+      background-position: 50% 50%;
+      color: #fff;
+      -webkit-transform: translate3d(0px, 0px, 0px);
+      visibility: hidden;
+      -webkit-transform-style: preserve-3d;
+    }
+
+    .alive {
+      visibility: visible;
+    }
+
+    .nav {
+      position: absolute;
+      z-index: 9;
+      top: 50%;
+      cursor: pointer;
+      color: #fff;
+      opacity: 0.7;
+      transition: all 0.66s ease;
+      -webkit-transition: all 0.66s ease;
+    }
+
+    .nav:hover {
+      opacity: 1.0;
+    }
+
+    #left {
+      left: 3%;
+    }
+
+    #right {
+      right: 3%;
+    }
+
+    #credit {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      color: #eaeaea;
+      font-family: 'Courier New', Courier, monospace;
+    }
   </style>
 </head>
+
 <body>
   <header class="p-2 shadow-md">
     <div class="container mx-auto flex justify-between items-center">
       <a class="block box-border h-16 w-16 md:h-20 md:w-20 overflow-hidden rounded-full transform hover:scale-110"
         href="">
-        <img class="h-full w-full object-cover"
-          src="/images/SBC logo.jpg"
+        <img class="h-full w-full object-cover" src="/images/SBC logo.jpg"
           alt="Logo of my example, this is a heart image">
       </a>
       <div>
@@ -171,22 +185,26 @@
           <ul class="flex flex-col gap-y-7 md:flex-row md:gap-2">
             <li class="md:border-r md:px-4 md:border-red-200">
               <a href="/company/about_super_bird.htm"
-                class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">About</a>
+                class="transition ease-in-out duration-150 underline text-white hover:text-orange">About</a>
             </li>
             <li class="md:border-r md:px-4 md:border-red-200">
-              <a href="/products/newbirdtoys.htm" class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">New
+              <a href="/products/newbirdtoys.htm"
+                class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">New
                 Products</a>
             </li>
             <li class="md:border-r md:px-4 md:border-red-200">
-              <a href="/catalog/catalog.htm" class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Download
+              <a href="/catalog/catalog.htm"
+                class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Download
                 Catalog</a>
             </li>
             <li class="md:border-r md:px-4 md:border-red-200">
-              <a href="/outlets/outlets.htm" class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Buy
+              <a href="/outlets/outlets.htm"
+                class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Buy
                 Online</a>
             </li>
             <li class="md:border-r md:px-4 md:border-red-200">
-              <a href="/contact/" class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Contact us</a>
+              <a href="/contact/"
+                class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Contact us</a>
             </li>
           </ul>
         </div>
@@ -230,55 +248,63 @@
   <section class="relative h-[500px]">
     <div id="slide-window" class="relative h-full overflow-hidden">
       <ol id="slides" start="1" class="w-full h-full flex transition-transform relative">
-        <li class="slide color-0 w-full h-full flex items-center justify-center bg-cover relative" style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-JSxf5Nm/0/X3/Burning-Man-Day-6%20%28202%20of%201606%29-X3.jpg);">
+        <li class="slide color-0 w-full h-full flex items-center justify-center bg-cover relative"
+          style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-JSxf5Nm/0/X3/Burning-Man-Day-6%20%28202%20of%201606%29-X3.jpg);">
           <div class="absolute inset-0 bg-black opacity-50"></div>
           <div class="text-center relative z-10 text-white text-4xl">
             <h1 class="text-4xl font-bold">Welcome to Our Toy Store</h1>
             <p class="text-lg mt-4">Discover a world of fun and interactive bird toys.</p>
           </div>
         </li>
-        <li class="slide color-1 w-full h-full flex items-center justify-center bg-cover relative" style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-KMjVHRd/0/X3/Andramada-X3.jpg);">
+        <li class="slide color-1 w-full h-full flex items-center justify-center bg-cover relative"
+          style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-KMjVHRd/0/X3/Andramada-X3.jpg);">
           <div class="absolute inset-0 bg-black opacity-50"></div>
           <div class="text-center relative z-10 text-white text-4xl">
             <h1 class="text-4xl font-bold">Subscribe to Our Newsletter</h1>
             <p class="text-lg mt-4">Stay up-to-date with the latest bird toy offers and news.</p>
-            <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full text-sm">Subscribe Now</button>
+            <button type="button"
+              class="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full text-sm">Subscribe Now</button>
           </div>
         </li>
-        <li class="slide color-2 w-full h-full flex items-center justify-center bg-cover relative" style="background-image:url(http://stuckincustoms.smugmug.com/Burning-Man/i-dd9xmfn/0/X3/The%20Steamy%20Car-X3.jpg);">
+        <li class="slide color-2 w-full h-full flex items-center justify-center bg-cover relative"
+          style="background-image:url(http://stuckincustoms.smugmug.com/Burning-Man/i-dd9xmfn/0/X3/The%20Steamy%20Car-X3.jpg);">
           <div class="absolute inset-0 bg-black opacity-50"></div>
           <div class="text-center relative z-10 text-white text-4xl">
             <h1 class="text-4xl font-bold">Explore Our Toy Collection</h1>
             <p class="text-lg mt-4">Browse our wide range of bird toys for your feathered friends.</p>
           </div>
         </li>
-        <li class="slide color-3 w-full h-full flex items-center justify-center bg-cover relative" style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-KscS8CF/0/X3/Burning-Man-Day-1%20%281006%20of%201210%29-X3.jpg);">
+        <li class="slide color-3 w-full h-full flex items-center justify-center bg-cover relative"
+          style="background-image:url(http://stuckincustoms.smugmug.com/Portfolio/i-KscS8CF/0/X3/Burning-Man-Day-1%20%281006%20of%201210%29-X3.jpg);">
           <div class="absolute inset-0 bg-black opacity-50"></div>
           <div class="text-center relative z-10 text-white text-4xl">
             <h1 class="text-4xl font-bold">Contact Us</h1>
             <p class="text-lg mt-4">Have questions or feedback? We're here to help.</p>
-            <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 mt-4 rounded-full text-sm">Contact</button>
+            <button
+              class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 mt-4 rounded-full text-sm">Contact</button>
           </div>
-        </li>  
+        </li>
       </ol>
       <!-- <span class="nav fa fa-chevron-left fa-3x" id="left">left</span>
       <span class="nav fa fa-chevron-right fa-3x" id="right">right</span>
    -->
       <!-- Left Arrow SVG Icon -->
-      <span id="left" class="nav absolute top-1/2 left-4 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600">
+      <span id="left"
+        class="nav absolute top-1/2 left-4 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
         </svg>
       </span>
       <!-- Right Arrow SVG Icon -->
-      <span id="right" class="nav absolute top-1/2 right-4 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600">
+      <span id="right"
+        class="nav absolute top-1/2 right-4 transform -translate-y-1/2 w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
         </svg>
       </span>
     </div>
   </section>
-  <section id="intro" class="bg-gray-100 py-16">
+  <section id="intro" class="bg-white py-16">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8">Super Bird Creations</h2>
       <div class="md:flex">
@@ -298,20 +324,65 @@
               href="/products/perchesandmore.htm">shower perches</a>, <a href="/products/snugglies.htm">snugglies</a>,
             <a href="/products/foragingbirdtoys.htm">foraging toys</a>, and <a
               href="/products/bulkbirdtoyparts.htm">bulk bird toy parts</a>. Whether you are looking for a toy for a
-            parrotlet or a macaw, we have you covered.</p>
+            parrotlet or a macaw, we have you covered.
+          </p>
         </div>
       </div>
     </div>
   </section>
-  <section id="mission" class="bg-gray-100 pt-8 pb-16">
+  <section id="mission" class="bg-[#FD4B04] pt-8 pb-16 text-white">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-semibold text-center mb-8">Our Mission</h2>
-      <p class="text-center">Our company mission is <em class="italic text-red-500">"To have a positive influence on the lives of
-          companion birds and their owners through the design and manufacture of our products."</em> In keeping with
+      <h2 class="text-3xl font-semibold text-center mb-8 text-white">Our Mission</h2>
+      <p class="text-center w-full lg:w-3/5 m-auto">Our company mission is <em class="italic font-bold text-black">"To have a positive influence on the
+          lives of companion birds and their owners through the design and manufacture of our products."</em> In keeping with
         that mission, we are pleased to provide you with some important information on the care of companion birds as it
         relates to toys in the following articles:</p>
     </div>
   </section>
+
+  <section id="our-products" class="py-12 bg-gray-100">
+    <h2 class="text-3xl font-semibold text-center mb-8">Our Product Categories</h2>
+
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Product Category Card 1 -->
+        <div class="relative bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+          <img src="/images/foot-toys.jpg" alt="Foot Toys" class="w-full h-40 object-contain mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold text-black mb-6">Foot Toys</h3>
+          <a href="/foottoys.htm" class="mt-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">View Products</a>
+        </div>
+
+        <!-- Product Category Card 2 -->
+        <div class="relative bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+          <img src="/images/foraging-bird-toys.jpg" alt="Foraging Toys" class="w-full h-40 object-contain mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold text-black mb-6">Foraging Toys</h3>
+          <a href="/foragingbirdtoys.htm" class="border border-blue-500 mt-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 hover:border-transparent rounded">View Products</a>
+        </div>
+
+        <!-- Product Category Card 3 -->
+        <div class="relative bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+          <img src="/images/medium-bird-toys.jpg" alt="Medium Bird Toys" class="w-full h-40 object-contain mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold text-black mb-6">Medium Bird Toys</h3>
+          <a href="/mediumbirdtoys.htm" class="mt-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">View Products</a>
+        </div>
+
+        <!-- Product Category Card 4 -->
+        
+        <div class="relative bg-white shadow-lg rounded-lg p-8 transform transition-transform hover:scale-105">
+          <img src="/images/snuggles.jpg" alt="Snugglies & Hideaways" class="w-full h-40 object-contain mb-4 rounded-lg">
+          <h3 class="text-xl font-semibold text-black mb-6">Snugglies & Hideaways</h3>
+          <a href="/snugglies.htm" class="mt-4 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">View Products</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <a href="/products.htm" class=" mt-12 mx-auto bg-blue-500 hover:bg-blue-600 !text-white font-semibold py-2 px-4 rounded-md">
+                More Product Categories
+        </a>
+      </div>
+    </div>
+  </section>
+
+
   <section id="our-articles" class="py-12">
     <h2 class="text-3xl font-semibold mb-2 text-center text-black">Our Articles</h2>
     <div class="container mx-auto flex flex-wrap justify-center">
@@ -324,7 +395,7 @@
             <p class="text-gray-600 text-sm">As with kids, no toy is 100% safe for all birds. A parrot relies on its
               owner to make sure its playtime activities are safe. Selecting the right toy is one way you can keep your
               bird healthy and injury free...</p>
-              <a href="/articles/safety.htm" class="text-blue-500 hover:underline block mt-6">Read More...</a>
+            <a href="/articles/safety.htm" class="text-blue-500 underline block mt-6">Read More...</a>
           </div>
         </div>
       </div>
@@ -337,7 +408,7 @@
             <p class="text-gray-600 text-sm">...or is it a magical device that becomes whatever your bird desires? One
               thing is very clear, bird toys are more than mere playthings when it comes to your bird. What does a bird
               toy represent to your bird? How can this help you to make better choices for your bird?...</p>
-            <a href="/articles/choosing_a_toy.htm" class="text-blue-500 hover:underline block mt-6">Read More...</a>
+            <a href="/articles/choosing_a_toy.htm" class="text-blue-500 underline block mt-6">Read More...</a>
           </div>
         </div>
       </div>
@@ -346,11 +417,11 @@
           <img src="/images/SCC_logo.jpg" alt="Laptop on Desk"
             class="rounded-t-lg md:rounded-l-lg md:rounded-t-none w-100 h-[250px] m-auto" />
           <div class="pt-6">
-          <h2 class="text-xl font-semibold mb-6">Why Bird Toys are Important?</h2>
-          <p class="text-gray-600 text-sm">As a pet in captivity, birds don’t have the opportunity to engage in the
-            activities that they naturally would in the wild. Avian behaviorists who have spent time observing parrots
-            in the wild have reported that playtime ranks second only to food gathering in priority...</p>
-          <a href="articles/importance.htm" class="text-blue-500 hover:underline mt-6 block">Read more...</a>
+            <h2 class="text-xl font-semibold mb-6">Why Bird Toys are Important?</h2>
+            <p class="text-gray-600 text-sm">As a pet in captivity, birds don’t have the opportunity to engage in the
+              activities that they naturally would in the wild. Avian behaviorists who have spent time observing parrots
+              in the wild have reported that playtime ranks second only to food gathering in priority...</p>
+            <a href="articles/importance.htm" class="text-blue-500 underline mt-6 block">Read more...</a>
           </div>
         </div>
       </div>
@@ -360,7 +431,7 @@
     <div class="container mx-auto flex flex-wrap justify-center">
       <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
         <h3 class="text-2xl font-semibold mb-4">Product Categories</h3>
-        <ul class="list-none text-center">
+        <ul class="list-none text-center md:text-start">
           <li><a href="/products/smallbirdtoys.htm" class="hover:text-blue-500">Small Bird Toys</a></li>
           <li><a href="/products/mediumbirdtoys.htm" class="hover:text-blue-500">Medium Bird Toys</a></li>
           <li><a href="/products/largebirdtoys.htm" class="hover:text-blue-500">Large Bird Toys</a></li>
@@ -370,7 +441,7 @@
       </div>
       <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
         <h3 class="text-2xl font-semibold mb-4">Toy Types</h3>
-        <ul class="list-none text-center">
+        <ul class="list-none text-center md:text-start">
           <li><a href="/products/foottoys.htm" class="hover:text-blue-500">Foot Toys</a></li>
           <li><a href="/products/swingsbungees.htm" class="hover:text-blue-500">Swings &amp; Bungees</a></li>
           <li><a href="/products/foragingbirdtoys.htm" class="hover:text-blue-500">Foraging Toys</a></li>
@@ -380,7 +451,7 @@
       </div>
       <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
         <h3 class="text-2xl font-semibold mb-4">More Products</h3>
-        <ul class="list-none text-center">
+        <ul class="list-none text-center md:text-start">
           <li><a href="/products/perchesandmore.htm" class="hover:text-blue-500">Perches &amp; Perch Toys</a></li>
           <li><a href="/products/bulkbirdtoyparts.htm" class="hover:text-blue-500">Bulk Bird Toy Parts</a></li>
           <li><a href="/products/seasonalbirdtoys.htm" class="hover:text-blue-500">Seasonal Bird Toys</a></li>
@@ -389,7 +460,7 @@
       </div>
       <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
         <h3 class="text-2xl font-semibold mb-4">About Us</h3>
-        <ul class="list-none text-center">
+        <ul class="list-none text-center md:text-start">
           <li><a href="/company/about_super_bird.htm" class="hover:text-blue-500">About Super Bird Creations</a></li>
           <li><a href="/contact/" class="hover:text-blue-500">Contact Us</a></li>
           <li><a href="/resources/resources.htm" class="hover:text-blue-500">Media Resources</a></li>
@@ -417,50 +488,51 @@
   });
 </script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-  const global = {
-    item: 1,
-    total: 0,
-  };
-  const WindowWidth = window.innerWidth;
-  const SlideCount = document.querySelectorAll('#slides li').length;
-  const SlidesWidth = SlideCount * WindowWidth;
-  global.item = 0;
-  global.total = SlideCount;
-  const slideElements = document.querySelectorAll('.slide');
-  const slides = document.getElementById('slides');
-  slideElements.forEach(slide => {
-    slide.style.width = WindowWidth + 'px';
+  document.addEventListener('DOMContentLoaded', function () {
+    const global = {
+      item: 1,
+      total: 0,
+    };
+    const WindowWidth = window.innerWidth;
+    const SlideCount = document.querySelectorAll('#slides li').length;
+    const SlidesWidth = SlideCount * WindowWidth;
+    global.item = 0;
+    global.total = SlideCount;
+    const slideElements = document.querySelectorAll('.slide');
+    const slides = document.getElementById('slides');
+    slideElements.forEach(slide => {
+      slide.style.width = WindowWidth + 'px';
+    });
+    slides.style.width = SlidesWidth + 'px';
+    document.querySelector('#slides li:nth-child(1)').classList.add('alive');
+    document.querySelector('#left').addEventListener('click', () => Slide('back'));
+    document.querySelector('#right').addEventListener('click', () => Slide('forward'));
+    function Slide(direction) {
+      let target;
+      if (direction === 'back') {
+        target = global.item - 1;
+      }
+      if (direction === 'forward') {
+        target = global.item + 1;
+      }
+      if (target === -1) {
+        DoIt(global.total - 1);
+      } else if (target === global.total) {
+        DoIt(0);
+      } else {
+        DoIt(target);
+      }
+    }
+    function DoIt(target) {
+      const windowWidth = window.innerWidth;
+      const margin = windowWidth * target;
+      const actualTarget = target + 1;
+      document.querySelector('#slides li:nth-child(' + actualTarget + ')').classList.add('alive');
+      slides.style.transform = 'translate3d(-' + margin + 'px,0px,0px)';
+      global.item = target;
+      document.querySelector('#count').textContent = global.item + 1;
+    }
   });
-  slides.style.width = SlidesWidth + 'px';
-  document.querySelector('#slides li:nth-child(1)').classList.add('alive');
-  document.querySelector('#left').addEventListener('click', () => Slide('back'));
-  document.querySelector('#right').addEventListener('click', () => Slide('forward'));
-  function Slide(direction) {
-    let target;
-    if (direction === 'back') {
-      target = global.item - 1;
-    }
-    if (direction === 'forward') {
-      target = global.item + 1;
-    }
-    if (target === -1) {
-      DoIt(global.total - 1);
-    } else if (target === global.total) {
-      DoIt(0);
-    } else {
-      DoIt(target);
-    }
-  }
-  function DoIt(target) {
-    const windowWidth = window.innerWidth;
-    const margin = windowWidth * target;
-    const actualTarget = target + 1;
-    document.querySelector('#slides li:nth-child(' + actualTarget + ')').classList.add('alive');
-    slides.style.transform = 'translate3d(-' + margin + 'px,0px,0px)';
-    global.item = target;
-    document.querySelector('#count').textContent = global.item + 1;
-  }
-});
 </script>
+
 </html>

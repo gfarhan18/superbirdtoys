@@ -6,16 +6,16 @@
 	*/
 	/* Start Reset Styles - Thanks to Eric Meyer (http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/)*/
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,	
-	a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+	abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
 	small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-	table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+	table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; outline: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
 	/*End Reset Styles */
+	a {margin: 0; padding: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
 	a:link {color: #0099FF;}
 	a:visited{color: #666666;}
 	a:hover {color: #FF0000;}
 	body {background: #17BDFF url(/images/page_bg2.gif) no-repeat center -40px; background-attachment: fixed; margin: 0; padding: 0; font-family: 'Roboto',Verdana, Arial, Helvetica, sans-serif; font-size: 16px; color: #000; }
 	/* ol, ul, li {list-style: none;} */
-	img, a {border: none;}
 	h1, h2, h3, h4, h5 {padding: 0; margin: 0; font-family: 'Roboto',Verdana, Arial, Helvetica, sans-serif; word-spacing: 3pt; line-height: 16pt; clear: both;}
 	h1,h2,h3 { color: #FD4B04;}
 	.mmt {margin-top: 40px;}
@@ -150,3 +150,8 @@
 	.foot_box li .foot_copy li {width: 917px; height: 27px; margin: 0; background: none;}
 	.foot_box li .foot_copy li a {text-decoration: none; color: #fff;}
 	.foot_box li .foot_copy li a:hover {text-decoration: underline;}
+
+
+	/* footer */
+	footer a:link {color: white}
+
