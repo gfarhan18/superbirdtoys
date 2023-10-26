@@ -52,8 +52,8 @@
 	z-index: 1500;
 }
 	/*.headint #navbar a {margin-right: 20px;}*/
-	header {background-color: #17BDFF; color: white;}
-	header a:link {color: white;}
+	header {background-color: white;}
+	header a:link {color: #17BDFF;}
 	header a:link:hover {color: #FD4B04}
 	#head #navbar a, .headint #navbar a {height: 38px; overflow: hidden; text-indent: -5000em; float: left; display: block;}
 	a.nav1 {width: 150px; background: url(/images/nav/nav1up.gif) no-repeat top left;}
