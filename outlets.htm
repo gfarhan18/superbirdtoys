@@ -11,16 +11,24 @@
 <meta name="Description" content="If you can't locate our products at your favorite store we have several online retailers that you can contact by following the links below." /> 
 
 <meta name="Keywords" content="bird toys wholesale, wholesale bird toys, bird toy parts" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" type="text/css" href="/css/index.css" media="screen" />
 <link rel="SHORTCUT ICON" href="http://www.superbirdtoys.com/favicon.ico" /> 
 
 <link rel="icon" type="image/gif" href="/favicon.gif" /> 
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 <style type="text/css">
+  
 
 body {background-position: center -180px;}
 
 </style>
-
+<script>
 
 
 
@@ -51,72 +59,64 @@ body {background-position: center -180px;}
 
 
 
-<ul class="headint"><li>
+  <header class="p-2 shadow-md">
+		<div class="container mx-auto flex justify-between items-center">
+		  <a class="block box-border h-16 w-16 md:h-20 md:w-20 overflow-hidden rounded-full transform hover:scale-110"
+			href="">
+			<img class="h-full w-full object-cover" src="/images/SBC logo.jpg"
+			  alt="Logo of my example, this is a heart image">
+		  </a>
+		  <div>
+			<button id="toggle-menu-button" class="z-50 md:hidden relative">
+			  <span class="sr-only">Toggle Menu</span>
+			  <div id="open" class="h-7 flex flex-col items-end justify-between">
+				<span class="block h-0.5 w-8 bg-red-900 rounded-full"></span>
+				<span class="block h-0.5 w-6 bg-red-900 rounded-full"></span>
+				<span class="block h-0.5 w-8 bg-red-900 rounded-full"></span>
+			  </div>
+			  <div id="close" class="hidden h-7 flex flex-col items-end justify-between">
+				<span
+				  class="block h-0.5 w-8 bg-red-100 rounded-full origin-left transform rotate-45 translate-y-0.5"></span>
+				<span
+				  class="block h-0.5 w-8 bg-red-100 rounded-full origin-left transform -rotate-45 -translate-y-0.5"></span>
+			  </div>
+			</button>
+			<div id="toggle-menu"
+			  class="hidden md:block font-bold text-red-100 text-right text-2xl bg-gray-800 fixed top-0 left-0 h-screen w-screen flex flex-col items-center justify-center md:text-lg md:relative md:text-red-900 md:bg-transparent md:w-auto md:h-auto md:text-left">
+			  <ul class="flex flex-col gap-y-7 md:flex-row md:gap-2">
+				<li class="md:border-r md:px-4 md:border-red-200">
+				  <a href="/company/about_super_bird.htm"
+					class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">About</a>
+				</li>
+				<li class="md:border-r md:px-4 md:border-red-200">
+				  <a href="/products/newbirdtoys.htm"
+					class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">New
+					Products</a>
+				</li>
+				<li class="md:border-r md:px-4 md:border-red-200">
+				  <a href="/catalog/catalog.htm"
+					class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Download
+					Catalog</a>
+				</li>
+				<li class="md:border-r md:px-4 md:border-red-200">
+				  <a href="/outlets/outlets.htm"
+					class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Buy
+					Online</a>
+				</li>
+				<li class="md:border-r md:px-4 md:border-red-200">
+				  <a href="/contact/"
+					class="transition ease-in-out duration-150 hover:underline text-white hover:text-orange">Contact us</a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	</header>
 
-
-<a href="/products/newbirdtoys.htm"><img src="/images/new_parts2.gif" alt="Newest Additions to Super Bird Creations Bird Toy Product Line" /></a>
-
-<a href="/catalog/catalog.htm" target="_self"><img src="/images/catalog.png" alt="Download Current Catalog" /></a>
-
-<a href="/outlets/outlets.htm" target="_self"><img src="/images/buy_online.gif" alt="Buy Super Bird Toys Online" /></a>
-
-
-<a href="/contact/" target="_self"><img src="/images/contact_us2.gif" alt="Contact Super Bird Creations about Super Bird Toys" /></a>
-
-</div>
-
-
-<div class="parright">
-
-<div class="flash_box">
-
-
-
-
-</div>
-
-
-
-
-<div class="textgrip"><a href="/" target="_self" rel="nofollow"><img src="/images/logo_int.gif" alt="logo"/></a></div>
-
-
-
-<div id="navbar">
-
-
-
-<a href="/products/products.htm" class="nav1" target="_self">Super Bird Creations Product Line</a>
-
-
-
-<a href="/distributor/distributor.htm" class="nav2" target="_self">Distributor information</a>
-
-
-
-<a href="/wholesale/wholesale.htm" class="nav3" target="_self">Wholesale information</a>
-
-
-
-<a href="/outlets/outlets.htm" class="nav4" target="_self">Retail Outlets</a>
-
-
-
-<a href="javascript:history.go(-1)" class="nav5" target="_self">Super Bird Creations Home</a>
-
-
-<a href="/" class="nav6" target="_self" style="float: right;">Go Back a Page</a>
-
-
-
-</div>
-
-
-</li>
-
-
-
-
+  <section id="hero" class="text-center bg-gradient-to-tl from-gray-900 via-gray-800 to-gray-900 bg-no-repeat bg-0 bg-0 py-24">
+		<h1 class="text-4xl mb-4">Buy Online</h1>
+		<p class="text-white w-full md:w-1/2 mx-auto">Super Bird Creations products are sold at fine pet stores nationwide.</p>
+	</section>
 
 
 <ul class="page_box">
@@ -261,79 +261,54 @@ body {background-position: center -180px;}
 
 
 
-<ul class="foot_box">
-
-<li>
-
-<ul class="bot_nav_5">
-
-<li><a href="/products/smallbirdtoys.htm" title="Small Bird Toys" target="_self">Small Bird Toys</a></li>
-
-<li><a href="/products/mediumbirdtoys.htm" title="Medium Bird Toys" target="_self">Medium Bird Toys</a></li>
-
-<li><a href="/products/largebirdtoys.htm" title="Large Bird Toys" target="_self">Large Bird Toys</a></li>
-
-<li><a href="/products/xlbirdtoys.htm" title="XL Bird Toys" target="_self">XL Bird Toys</a></li>
-
-<li><a href="/products/newbirdtoys.htm" title="New Super Bird Toys" target="_self" style="color: #FF0000;">New Bird Toys</a></li>
-
-</ul>
-
-<ul class="bot_nav_3">
-
-<li><a href="/products/foottoys.htm" title="Bird Hand Toys" target="_self">Foot Toys</a></li>
-
-<li><a href="/products/swingsbungees.htm" title="Bird Bungees" target="_self">Swings &amp; Bungees</a></li>
-
-<li><a href="/products/foragingbirdtoys.htm" title="Foraging Bird Toys" target="_self">Foraging Toys</a></li>
-
-<li><a href="/products/snugglies.htm" title="Bird Snugglies" target="_self">Snugglies</a></li>
-
-<li><a href="/products/perkyparrottoys.htm" title="Perky Parrot Toys" target="_self" style="color: #33ccff;" >Perky Parrot Toys</a></li>
-
-</ul>
-
-<ul class="bot_nav_2">
-
-<li><a href="/products/perchesandmore.htm" title="Bird Perches, Bolt-On Bird Toys and Perch Toys" target="_self">Perches &amp; Perch Toys</a></li>
-
-<li><a href="/products/bulkbirdtoyparts.htm" title="Bulk Bird Toy Parts" target="_self">Bulk Bird Toy Parts</a></li>
-
-<li><a href="/products/seasonalbirdtoys.htm" title="Seasonal Bird Toys" target="_self">Seasonal Bird Toys</a></li>
-
-<li><a href="/products/smallanimal.htm" title="Small Animal Toys" target="_self">Small Animal Toys</a></li>
-
-</ul>
-
-
-
-<ul class="bot_nav_1">
-
-<li><a href="/company/about_super_bird.htm">About Us</a> or <a href="/contact/" title="Contact Super Bird Toys" target="_self">Contact Us</a></li>
-
-<li><a href="/resources/resources.htm" title="Super Bird Media Resources Downloads" target="_self">Media Resources</a> &amp; <a href="/links/links.htm" title="Website Feedback" target="_self">Helpful links</a></li>
-
-<li><a href="/catalog/catalog.htm" title="Download Super Bird Creations Catalog" target="_self">Download Catalog</a></li>
-
-<li><a href="/surveys/" title="Super Bird Creations Survey" target="_self">Super Bird Survey</a></li>
-
-<li><a href="/sitemap/sitemap.htm" title="Super Bird Toys Site Map" target="_self">Site Map</a></li>
-
-</ul>
-
-
-
-<ul class="foot_copy">
-
-<li>Copyright &copy; 2022 Super Bird Creations. All rights reserved.</li>
-
-</ul>
-
-
-
-<a href="javascript:scroll (0,0)" target="_self" rel="nofollow" class="top_but"></a></li>
-
-</ul>
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto flex flex-wrap justify-center">
+    <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
+      <h3 class="text-2xl font-semibold mb-4">Product Categories</h3>
+      <ul class="list-none text-center md:text-start">
+        <li><a href="/products/smallbirdtoys.htm" class="hover:text-blue-500">Small Bird Toys</a></li>
+        <li><a href="/products/mediumbirdtoys.htm" class="hover:text-blue-500">Medium Bird Toys</a></li>
+        <li><a href="/products/largebirdtoys.htm" class="hover:text-blue-500">Large Bird Toys</a></li>
+        <li><a href="/products/xlbirdtoys.htm" class="hover:text-blue-500">XL Bird Toys</a></li>
+        <li><a href="/products/newbirdtoys.htm" class="hover:text-red-500">New Bird Toys</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
+      <h3 class="text-2xl font-semibold mb-4">Toy Types</h3>
+      <ul class="list-none text-center md:text-start">
+        <li><a href="/products/foottoys.htm" class="hover:text-blue-500">Foot Toys</a></li>
+        <li><a href="/products/swingsbungees.htm" class="hover:text-blue-500">Swings &amp; Bungees</a></li>
+        <li><a href="/products/foragingbirdtoys.htm" class="hover:text-blue-500">Foraging Toys</a></li>
+        <li><a href="/products/snugglies.htm" class="hover:text-blue-500">Snugglies</a></li>
+        <li><a href="/products/perkyparrottoys.htm" class="hover:text-blue-500">Perky Parrot Toys</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
+      <h3 class="text-2xl font-semibold mb-4">More Products</h3>
+      <ul class="list-none text-center md:text-start">
+        <li><a href="/products/perchesandmore.htm" class="hover:text-blue-500">Perches &amp; Perch Toys</a></li>
+        <li><a href="/products/bulkbirdtoyparts.htm" class="hover:text-blue-500">Bulk Bird Toy Parts</a></li>
+        <li><a href="/products/seasonalbirdtoys.htm" class="hover:text-blue-500">Seasonal Bird Toys</a></li>
+        <li><a href="/products/smallanimal.htm" class="hover:text-blue-500">Small Animal Toys</a></li>
+      </ul>
+    </div>
+    <div class="w-full md:w-1/2 lg:w-1/4 p-4 flex items-center md:items-start flex-col">
+      <h3 class="text-2xl font-semibold mb-4">About Us</h3>
+      <ul class="list-none text-center md:text-start">
+        <li><a href="/company/about_super_bird.htm" class="hover:text-blue-500">About Super Bird Creations</a></li>
+        <li><a href="/contact/" class="hover:text-blue-500">Contact Us</a></li>
+        <li><a href="/resources/resources.htm" class="hover:text-blue-500">Media Resources</a></li>
+        <li><a href="/links/links.htm" class="hover:text-blue-500">Helpful Links</a></li>
+        <li><a href="/catalog/catalog.htm" class="hover:text-blue-500">Download Catalog</a></li>
+        <li><a href="/surveys/" class="hover:text-blue-500">Super Bird Survey</a></li>
+        <li><a href="/sitemap/sitemap.htm" class="hover:text-blue-500">Site Map</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-center mt-8">
+    <p class="text-gray-500">Copyright &copy; 2023 Super Bird Creations. All rights reserved.</p>
+  </div>
+</footer>
 
 
 
